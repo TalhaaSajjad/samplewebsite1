@@ -1,27 +1,29 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portfolio | Your Name</title>
+  <title>The Fire Foods | Cinematic Restaurant Experience</title>
+  <meta name="description" content="The Fire Foods restaurant website with cinematic visuals, menu highlights, reviews, and contact backend." />
   <link rel="stylesheet" href="styles.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
 </head>
 <body>
   <header class="site-header">
     <div class="container header-inner">
-      <a href="#home" class="brand">YourName</a>
-      <button class="nav-toggle" aria-label="Open navigation">
+      <a href="#home" class="brand">The Fire Foods</a>
+      <button class="nav-toggle" aria-label="Toggle menu">
         <span></span>
         <span></span>
         <span></span>
       </button>
       <nav class="site-nav">
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#skills">Skills</a>
+        <a href="#home">Home</a>
+        <a href="#menu">Menu</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#location">Location</a>
         <a href="#contact">Contact</a>
       </nav>
     </div>
@@ -29,223 +31,218 @@
 
   <main>
     <section class="hero" id="home">
-      <div class="container hero-grid">
+      <div class="hero-content container">
         <div class="hero-copy">
-          <p class="eyebrow">Hi, I’m</p>
-          <h1>Crafting digital experiences with design and code.</h1>
-          <p class="hero-text">I build modern websites and applications that help brands connect, convert, and grow. Explore my work, skills, and contact details below.</p>
+          <p class="eyebrow">Karachi's boldest flavors</p>
+          <h1>Welcome to The Fire Foods</h1>
+          <p>Experience cinematic dining, fiery pizza, and handcrafted kabab flavors at Korangi’s most immersive restaurant.</p>
           <div class="hero-actions">
-            <a class="button primary" href="#projects">View Projects</a>
-            <a class="button secondary" href="#contact">Get in Touch</a>
+            <a href="#menu" class="button primary">Explore Menu</a>
+            <a href="#contact" class="button secondary">Book a Table</a>
+          </div>
+          <div class="hero-meta">
+            <span>4.8 rating</span>
+            <span>29 reviews</span>
+            <span>Opens 5 PM</span>
           </div>
         </div>
-        <div class="hero-card">
-          <div class="hero-card-media">
-            <img class="hero-visual" src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1200&q=80" alt="Cinematic workspace" />
-            <div class="hero-card-overlay">
-              <span>Featured Work</span>
-              <p>Design systems, motion, and digital storytelling for modern brands.</p>
+        <div class="hero-media">
+          <div class="hero-image-wrap">
+            <img src="https://images.unsplash.com/photo-1553621042-f6e147245754?auto=format&fit=crop&w=1000&q=80" alt="Cinematic restaurant dish" />
+          </div>
+          <div class="hero-card card-glow">
+            <h2>Signature Dish</h2>
+            <p>Fire-grilled pizza layered with premium cheese, fresh toppings, and a spicy house kabab drizzle.</p>
+            <div class="card-details">
+              <span>Fast takeout</span>
+              <span>Friendly delivery</span>
             </div>
           </div>
-          <div class="profile-info">
-            <h2>Welcome!</h2>
-            <p>Designer • Developer • Problem solver</p>
-            <div class="stats-grid">
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-overview" id="about">
+      <div class="container">
+        <div class="section-heading">
+          <span>About The Fire Foods</span>
+          <h2>Bold taste, cinematic presentation, unforgettable meals.</h2>
+        </div>
+        <div class="overview-grid">
+          <div class="overview-copy">
+            <p>At The Fire Foods, every dish is crafted to deliver rich local flavors with a premium dining experience. We combine fresh ingredients, generous toppings, and a modern restaurant atmosphere to make every visit special.</p>
+            <ul>
+              <li>Handmade pizzas with kabab-inspired seasonings</li>
+              <li>Cheesy, hot, and perfectly balanced portions</li>
+              <li>Delivery, takeout, and dine-in options available</li>
+            </ul>
+          </div>
+          <div class="overview-stats">
+            <div class="stat-card">
+              <span>4.8</span>
+              <p>Google rating</p>
+            </div>
+            <div class="stat-card">
+              <span>29</span>
+              <p>Reviews</p>
+            </div>
+            <div class="stat-card">
+              <span>5 PM</span>
+              <p>Daily opening time</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-menu" id="menu">
+      <div class="container">
+        <div class="section-heading">
+          <span>Menu highlights</span>
+          <h2>Discover dishes that bring fire, flavor, and value.</h2>
+        </div>
+        <div class="menu-grid">
+          <article class="menu-card">
+            <h3>Kabab Pizza</h3>
+            <p>Hot and hearty pizza tossed with smoky kabab sauce, fresh veggies, and melted cheese.</p>
+            <span>PKR 1,750</span>
+          </article>
+          <article class="menu-card">
+            <h3>Cheese Overload Fries</h3>
+            <p>Crispy fries stacked with three cheeses, jalapeño, and signature seasoning.</p>
+            <span>PKR 850</span>
+          </article>
+          <article class="menu-card">
+            <h3>Fire-Grilled Kabab Wrap</h3>
+            <p>Soft flatbread filled with grilled kabab, fresh greens, and tangy sauce.</p>
+            <span>PKR 950</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-experience" id="experience">
+      <div class="container experience-grid">
+        <div class="experience-copy">
+          <span>Why choose us</span>
+          <h2>A cinematic restaurant experience that feels premium and personal.</h2>
+          <p>From the moment you arrive to the final bite, The Fire Foods blends cozy hospitality with bold flavor. Our menu is designed to please groups, families, and food lovers looking for taste and value.</p>
+          <div class="feature-list">
+            <div>
+              <strong>Fresh Ingredients</strong>
+              <p>Only the best cheese, spice blends, and toppings.</p>
+            </div>
+            <div>
+              <strong>Fast Service</strong>
+              <p>Takeout and delivery ready when you are.</p>
+            </div>
+          </div>
+        </div>
+        <div class="experience-image">
+          <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1000&q=80" alt="Chef preparing pizza" />
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-reviews" id="reviews">
+      <div class="container">
+        <div class="section-heading">
+          <span>Customer reviews</span>
+          <h2>What locals say about our taste and quality.</h2>
+        </div>
+        <div class="review-grid">
+          <article class="review-card">
+            <p>“Excellent taste and quality. Cheese was fresh, toppings were rich, and everything was perfectly balanced.”</p>
+            <span>Syed Salman Ali</span>
+          </article>
+          <article class="review-card">
+            <p>“Kabab flavor pizza is a must-try. Great taste, affordable price, and amazing portions.”</p>
+            <span>Muhammad Noman</span>
+          </article>
+          <article class="review-card">
+            <p>“The pizza fries were incredibly cheesy and served hot. Excellent variety for the price.”</p>
+            <span>Zohan Ahmed</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-location" id="location">
+      <div class="container location-grid">
+        <div>
+          <div class="section-heading">
+            <span>Visit us</span>
+            <h2>Find The Fire Foods in Korangi, Karachi.</h2>
+          </div>
+          <div class="location-copy">
+            <p>Near shop no 3 Plot 32 Allah Wala Town Rd, 31 A, Sector Allah Wala Town Sector 31 A Korangi, Karachi, 74900, Pakistan</p>
+            <div class="location-meta">
               <div>
-                <strong>5+</strong>
-                <span>Years experience</span>
+                <strong>Open</strong>
+                <span>5 PM – 11 PM</span>
               </div>
               <div>
-                <strong>15+</strong>
-                <span>Projects shipped</span>
+                <strong>Takeout</strong>
+                <span>Available</span>
               </div>
               <div>
-                <strong>10+</strong>
-                <span>Clients served</span>
+                <strong>Delivery</strong>
+                <span>Available</span>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-
-    <section class="section" id="about">
-      <div class="container">
-        <div class="section-heading">
-          <span>About me</span>
-          <h2>Problem solving through thoughtful design and clean code.</h2>
-        </div>
-        <div class="content-grid about-grid">
-          <div class="about-copy">
-            <p>I'm a front-end developer who enjoys turning ideas into interfaces. My focus is building responsive, accessible, and user-friendly websites that feel polished on every screen.</p>
-            <p>Whether it's a personal brand site, a product landing page, or a custom web app, I care about clarity, speed, and strong visual storytelling.</p>
-            <div class="about-list">
-              <div><strong>Email</strong><span>youremail@example.com</span></div>
-              <div><strong>Location</strong><span>Your City, Country</span></div>
-              <div><strong>Availability</strong><span>Open for new projects</span></div>
-            </div>
-          </div>
-          <div class="about-media">
-            <div class="about-image-wrap">
-              <img class="about-image" src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=900&q=80" alt="Working on a creative project" />
-              <div class="about-image-caption">Strategic creativity meets polished execution.</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section section-alt" id="clients">
-      <div class="container">
-        <div class="section-heading">
-          <span>Trusted by</span>
-          <h2>Partnering with brands on design, product, and digital strategy.</h2>
-        </div>
-        <div class="clients-grid">
-          <div class="client-card">
-            <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=400&q=80" alt="Studio workspace" />
-            <span>Orbit Studio</span>
-          </div>
-          <div class="client-card">
-            <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=400&q=80" alt="Creative team" />
-            <span>Pulse Digital</span>
-          </div>
-          <div class="client-card">
-            <img src="https://images.unsplash.com/photo-1497493292307-31c376b6e479?auto=format&fit=crop&w=400&q=80" alt="Modern office" />
-            <span>Launch Labs</span>
-          </div>
-          <div class="client-card">
-            <img src="https://images.unsplash.com/photo-1454165205744-3b78555e5572?auto=format&fit=crop&w=400&q=80" alt="Design meeting" />
-            <span>Nova Commerce</span>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="projects">
-      <div class="container">
-        <div class="section-heading">
-          <span>Showcase</span>
-          <h2>Selected projects that demonstrate impact and polish.</h2>
-        </div>
-        <div class="project-grid">
-          <article class="project-card">
-            <figure>
-              <img src="https://images.unsplash.com/photo-1557804506-669a67965ba0?auto=format&fit=crop&w=800&q=80" alt="Brand website showcase" />
-            </figure>
-            <h3>Brand Website Redesign</h3>
-            <p>Modernized a corporate website with improved navigation, faster load times, and mobile-first design.</p>
-            <a href="#contact">Learn more</a>
-          </article>
-          <article class="project-card">
-            <figure>
-              <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=800&q=80" alt="E-commerce user interface" />
-            </figure>
-            <h3>E-commerce UI Kit</h3>
-            <p>Created a reusable product listing and checkout experience focused on conversion and accessibility.</p>
-            <a href="#contact">Learn more</a>
-          </article>
-          <article class="project-card">
-            <figure>
-              <img src="https://images.unsplash.com/photo-1496317899792-9d7dbcd928a1?auto=format&fit=crop&w=800&q=80" alt="Marketing landing page" />
-            </figure>
-            <h3>Marketing Landing Page</h3>
-            <p>Built a high-converting landing page with clear messaging, animation, and lead capture form.</p>
-            <a href="#contact">Learn more</a>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="skills">
-      <div class="container">
-        <div class="section-heading">
-          <span>Skills</span>
-          <h2>Tools and technologies I use every day.</h2>
-        </div>
-        <div class="skills-grid">
-          <span>HTML & CSS</span>
-          <span>JavaScript</span>
-          <span>React</span>
-          <span>Next.js</span>
-          <span>Tailwind CSS</span>
-          <span>Figma</span>
-          <span>Responsive Design</span>
-          <span>Accessibility</span>
-        </div>
-      </div>
-    </section>
-
-    <section class="section section-alt" id="testimonials">
-      <div class="container">
-        <div class="section-heading">
-          <span>Testimonials</span>
-          <h2>What clients say about working together.</h2>
-        </div>
-        <div class="testimonial-grid">
-          <article class="testimonial-card">
-            <div class="testimonial-avatar">
-              <img src="https://images.unsplash.com/photo-1544723795-3fb6469f5b39?auto=format&fit=crop&w=200&q=80" alt="Client testimonial portrait" />
-            </div>
-            <p>“Professional, thoughtful, and fast. The final website exceeded our expectations and helped us launch with confidence.”</p>
-            <h3>Jordan Lee</h3>
-            <span>Founder, Nova Commerce</span>
-          </article>
-          <article class="testimonial-card">
-            <div class="testimonial-avatar">
-              <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=200&q=80" alt="Client testimonial portrait" />
-            </div>
-            <p>“The design direction was cinematic and refined. Communication was clear, and delivery was on schedule.”</p>
-            <h3>Sophia Grant</h3>
-            <span>Marketing Lead, Pulse Digital</span>
-          </article>
-          <article class="testimonial-card">
-            <div class="testimonial-avatar">
-              <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=200&q=80" alt="Client testimonial portrait" />
-            </div>
-            <p>“A polished product with attention to detail. Our team now has a website that feels premium and performs beautifully.”</p>
-            <h3>Amira Khan</h3>
-            <span>Product Manager, Launch Labs</span>
-          </article>
+        <div class="map-card card-glow">
+          <iframe title="The Fire Foods location" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3625.847399265093!2d67.10865391503362!3d24.92112868400133!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33cf935f8acca%3A0x12916df2a1598f0b!2sKorangi%20Town%2C%20Karachi%2C%20Sindh!5e0!3m2!1sen!2s!4v1680000000000!5m2!1sen!2s" loading="lazy"></iframe>
         </div>
       </div>
     </section>
 
     <section class="section section-contact" id="contact">
       <div class="container contact-grid">
-        <div>
-          <div class="section-heading">
-            <span>Let's connect</span>
-            <h2>Ready to build something great together?</h2>
-          </div>
-          <p>Send a message with your project details and I’ll respond quickly with a plan, timeline, and next steps.</p>
-          <div class="contact-details">
-            <div><strong>Email</strong><span>youremail@example.com</span></div>
-            <div><strong>Phone</strong><span>+123 456 7890</span></div>
+        <div class="contact-copy">
+          <span>Get in touch</span>
+          <h2>Reserve a table or ask about catering.</h2>
+          <p>Fill the form and our team will reply within minutes. We handle reservations, menu questions, and custom orders.</p>
+          <div class="contact-info">
+            <div>
+              <strong>Email</strong>
+              <span>info@thefirefoods.pk</span>
+            </div>
+            <div>
+              <strong>Phone</strong>
+              <span>+92 300 1234567</span>
+            </div>
           </div>
         </div>
-        <form class="contact-form">
+        <form class="contact-form" id="contact-form">
           <label>
             Name
-            <input type="text" placeholder="Your name" required />
+            <input type="text" name="name" placeholder="Your name" required />
           </label>
           <label>
             Email
-            <input type="email" placeholder="you@example.com" required />
+            <input type="email" name="email" placeholder="you@example.com" required />
           </label>
           <label>
             Message
-            <textarea rows="5" placeholder="Tell me about your project" required></textarea>
+            <textarea name="message" rows="5" placeholder="What would you like to order or ask?" required></textarea>
           </label>
-          <button type="submit" class="button primary">Send Message</button>
+          <button type="submit" class="button primary">Send message</button>
+          <p class="form-status" id="contact-status"></p>
         </form>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
-    <div class="container">
-      <p>&copy; 2026 Your Name. Built with HTML, CSS, and JavaScript.</p>
+    <div class="container footer-inner">
+      <p>© 2026 The Fire Foods · Dine-in · Takeout · Delivery</p>
+      <nav class="footer-nav">
+        <a href="#home">Home</a>
+        <a href="#menu">Menu</a>
+        <a href="#contact">Contact</a>
+      </nav>
     </div>
   </footer>
 

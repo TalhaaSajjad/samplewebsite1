@@ -1,25 +1,36 @@
-# Portfolio Website
+# The Fire Foods Website
 
-A simple portfolio website scaffold built with HTML, CSS, and JavaScript.
+A cinematic restaurant website with a complete front-end and Node.js backend for contact handling.
 
 ## Files
 
-- `index.html` — main landing page
-- `styles.css` — responsive styling
-- `script.js` — mobile navigation and contact form behavior
+- `index.html` — restaurant landing page and menu highlights
+- `styles.css` — dark cinematic styling and responsive layout
+- `script.js` — navigation and contact form submission logic
+- `server.js` — Express backend for serving the site and processing contact requests
+- `package.json` — project dependencies and startup scripts
+- `.env.example` — example environment variables for email notifications
 
-## Usage
+## Setup
 
-1. Open `index.html` in your browser.
-2. Replace placeholder text with your name, bio, contact details, and project descriptions.
-3. Add your own profile image or illustrations by replacing the `.profile-image` section in `styles.css`.
+1. Open a terminal in the project folder.
+2. Run `npm install` to install dependencies.
+3. Copy `.env.example` to `.env` and optionally configure SMTP settings.
+4. Start the server:
+   - `npm start` to run in production mode
+   - `npm run dev` to run with `nodemon`
+5. Open `http://localhost:3000` in your browser.
+
+## Contact backend
+
+The backend accepts POST requests to `/api/contact` and returns a JSON result. If SMTP is configured, the server will send the message as an email; otherwise it logs the request to the console.
 
 ## Customize
 
-- Update the `hero` and `about` sections with your personal branding.
-- Add or remove projects in the `#projects` section.
-- Add social links or portfolio case studies as needed.
+- Replace text and restaurant details inside `index.html`.
+- Update colors, spacing, and layout in `styles.css`.
+- Adjust the form fields or add new API routes in `server.js`.
 
 ## Notes
 
-This project is a static site, so it can be hosted on GitHub Pages, Netlify, or any static hosting provider.
+This website is built to be served locally or deployed to any Node.js hosting provider. The backend ensures the contact form is functional, not just static.
